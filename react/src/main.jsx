@@ -8,7 +8,7 @@ import Details from "./components/Details.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="mdia3170-lab7">
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/countries" element={<Countries />}>
