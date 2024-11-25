@@ -1,0 +1,15 @@
+{
+    "builds": [
+      {
+        "src": "react/package.json",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "react/build"
+        }
+      }
+    ],
+    "rewrites": [
+      { "source": "/(.*)", "destination": "/react/" }
+    ]
+  }
+  
